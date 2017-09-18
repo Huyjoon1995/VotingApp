@@ -1,0 +1,29 @@
+{
+  "name": "voteapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "debug": "~2.6.3",
+    "express": "^4.15.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.5",
+    "express-validator": "^4.1.1",
+    "jade": "^1.11.0",
+    "jade-bootstrap": "^1.0.14",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.11",
+    "morgan": "^1.8.2",
+    "multer": "^1.3.0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.4.4"
+  }
+}

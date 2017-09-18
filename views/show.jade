@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .container
+    h1=results.question
+    h2#total
+    .row
+      .col-xs-4
+        form(method="post", action="/polls/show/#{results._id}", id="votepoll")
+          each option, i in results.options
+            .radio
+              input(type="radio", name="option", value="#{option.choice}")
+              |  #{option.choice}
+          input.btn.btn-primary(name="submit", type="submit", value="Cast Vote!")
+      
+          input(type="hidden", id="labels", value="#{labels}")
+          input(type="hidden", id="data", value="#{data}")
+      .col-xs-8
+        canvas#myChart(width="400", height="400")

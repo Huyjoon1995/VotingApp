@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    h1 All Polls
+    if !user
+      p.lead
+        | Anybody can vote, but only
+        a(href="/users/register") registered users
+        |   can create polls.
+    hr
+    each result, i in results
+      p
+        a(href="/polls/show/#{result._id}") #{result.question}
+        |  posted by
+        strong #{result.username}

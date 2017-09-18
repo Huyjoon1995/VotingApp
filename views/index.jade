@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .jumbotron
+    .container
+      h1.intro You are the voice of the voiceless!
+      p.intro
+        | Think about it for a second. Whether you are at work or school. Discussion always happens, it's easy to lead to conflicts when there is too many opinions, so people will start to vote. Create your polls and let your voice be heard.
+      p
+        a.btn.btn-primary.btn-lg(href="/users/register", role="button") Sign Up Now &#187;
+        a.btn.btn-default.btn-lg(href="/polls/allpolls", role="button", id="indexbtn") Cast Vote &#187;
+  .container
+    .row
+      .col-md-4
+        h2 Share
+        p
+          | Who can you share these polls? It, it, it doesn't matter whom you want to share. More important they don't need to be a users to see polls.
+      .col-md-4
+        h2 Create
+        p
+          | Users can make unlimited polls and it will be displayed in a beautiful chart.
+      .col-md-4
+        h2 Manage
+        p
+          | Easily add more voting options to existing polls. And once the conflicts settled down, you can delete it and never heard of it again.
+    hr
+    footer
+      p &#169; 2017 Huy Tran
