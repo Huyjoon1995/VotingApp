@@ -1,5 +1,5 @@
 # Voting App
-This "basejump" is a fullstack project that I'm working on to attain the Back End Certificate at http://freecodecamp.com.
+This is the first project of the dynamic web application that requires for the back end certificate in Free Code Camp. 
 
 ## Live Demo
 
